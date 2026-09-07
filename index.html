@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinza Imtiaz | Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <header>
-        <p><strong>KI</strong> Kinza Imtiaz</p>
-        <nav aria-label="Primary navigation">
-            <ul>
+    <header class="site-header">
+        <p class="logo"><strong>KI</strong> Kinza Imtiaz</p>
+        <nav class="primary-nav" aria-label="Primary navigation">
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -22,10 +21,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <nav aria-label="Social links">
-            <ul>
+        <nav class="social-nav" aria-label="Social links">
+            <ul class="social-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="https://github.com/kinzadev-26" target="_blank">GitHub</a></li>
                 <li><a href="https://linkedin.com/in/kinza-imtiaz-454656370" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/kiziii26?stkn=bTFlc2tzeHBrbzJy" target="_blank">Instagram</a></li>
                 <li><a href="mailto:kinzaimtiaz313@gmail.com">Email</a></li>
             </ul>
         </nav>
@@ -33,40 +34,38 @@
 
     <main>
 
-        <section id="home" aria-label="Introduction">
-            <p>Hello, I'm</p>
-            <h1>Kinza Imtiaz</h1>
-            <p>IT Student &bull; Web Developer &bull; Always Learning, Always Shipping</p>
-            <p>Turning what I learn into real projects &mdash; currently exploring system design and backend scaling.
-            </p>
-            <p>
-                <a href="#projects">View My Work</a>
-                &nbsp;|&nbsp;
-                <a href="Kinza_Imtiaz.pdf" download>Download CV</a>
-            </p>
-            <img src="images/hero-image.jpeg" alt="Hero background">
-            <ul aria-label="Personal motto">
-                <li>Dream</li>
-                <li>Plan</li>
-                <li>Do</li>
-                <li>Repeat</li>
-            </ul>
+        <section id="home" class="hero" aria-label="Introduction">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1>Kinza Imtiaz</h1>
+                <p class="hero-tagline">IT Student &bull; Web Developer &bull; Always Learning, Always Shipping</p>
+                <p class="hero-summary">Turning what I learn into real projects &mdash; currently exploring system design and backend scaling.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-solid">View My Work</a>
+                    <a href="Kinza_Imtiaz.pdf" download class="btn btn-outline">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="images/hero-image.jpeg" alt="Hero image">
+            </div>
         </section>
-        <section id="about">
-            <img src="images/about.jpeg" alt="About me">
+
+        <div class="cards-grid">
+
+        <section id="about" class="card">
+            
             <h2>About Me</h2>
-            <p>Enthusiastic and detail-oriented Information Technology undergraduate with strong interest in software
-                engineeringand web development. Passionate about Learning modern technologies and applying technical
-                skills to build efficient, user-focused applications while growing as a developer.</p>
+            <p>Enthusiastic and detail-oriented Information Technology undergraduate with a strong interest in software engineering and web development. Passionate about learning modern technologies and applying technical skills to build efficient, user-focused applications while growing as a developer.</p>
         </section>
-        <section id="skills">
-            <img src="images/skills.jpeg" alt="Skills icon">
+
+        <section id="skills" class="card">
+            
             <h2>Skills</h2>
-            <p>Technologies and tools i work with.</p>
+            <p>Technologies and tools I work with.</p>
             <ul>
                 <li>HTML5 &amp; CSS3</li>
                 <li>JavaScript &amp; TypeScript</li>
-                <li>React &amp; TypeScript</li>
+                <li>React &amp; Next.js</li>
                 <li>Node.js, Express &amp; Nest.js</li>
                 <li>MongoDB, MySQL, PostgreSQL &amp; SQL</li>
                 <li>Tailwind CSS &amp; Bootstrap</li>
@@ -75,8 +74,8 @@
             </ul>
         </section>
 
-        <section id="education">
-            <img src="images/education.jpeg" alt="Education icon">
+        <section id="education" class="card">
+            
             <h2>Education</h2>
             <table>
                 <caption>Academic Background</caption>
@@ -100,98 +99,98 @@
                     </tr>
                     <tr>
                         <td>Matriculation</td>
-                        <td>Milat Ideal Higher Secondary School and College, Gujranwala</td>
+                        <td>Millat Ideal Higher Secondary School and College, Gujranwala</td>
                         <td>2018&ndash;2020</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="experience">
-            <img src="images/experience.jpeg" alt="Experience icon">
+        <section id="experience" class="card card-wide">
+        
             <h2>Experience</h2>
             <article>
-                <h3>Full-Stack Engineering Intern &mdash;AUREX (Current)</h3>
-                <p>Currently building frontend foundations: Git/GitHub workflows, HTML5 structure, and semantic,
-                    accessible markup.</p>
+                <h3>Full-Stack Engineering Intern &mdash; AUREX (Current)</h3>
+                <p>Currently building frontend foundations: Git/GitHub workflows, HTML5 structure, and semantic, accessible markup.</p>
             </article>
             <article>
-                <h3>Frontend Developer Intern &mdash;DevelopersHub Corporation (Remote, 2 months)</h3>
+                <h3>Frontend Developer Intern &mdash; DevelopersHub Corporation (Remote, 2 months)</h3>
                 <ul>
-                    <li>Developed responsive and user-friendly web interfaces using HTML, CSS, JavaScript.</li>
+                    <li>Developed responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.</li>
                     <li>Collaborated with team members to implement UI designs and improve user experience.</li>
-                    <li>Participated in code reviews and gained experience working in a remote development enviornment.
-                    </li>
+                    <li>Participated in code reviews and gained experience working in a remote development environment.</li>
                 </ul>
             </article>
-
             <article>
                 <h3>MERN Stack Intern &mdash; DawoodTech (Remote, 2 months)</h3>
                 <ul>
-                    <li>Assisted in developing full-stack web applications using the MERN stack. </li>
-                    <li>Worked with React.js, Node.js, Nest.js, Express.js and MongoDB to build and maintain application
-                        features.</li>
+                    <li>Assisted in developing full-stack web applications using the MERN stack.</li>
+                    <li>Worked with React.js, Node.js, Nest.js, Express.js, and MongoDB to build and maintain application features.</li>
                     <li>Collaborated with mentors on project development, debugging, and testing.</li>
                 </ul>
             </article>
         </section>
 
-        <section id="projects">
-            <img src="images/projects.jpeg" alt="Projects icon">
+        <section id="projects" class="card card-wide">
+        
             <h2>Projects</h2>
             <p>Explore my latest work and case studies.</p>
-            <article>
-                <h3>DevelopersHub Website</h3>
-                <p>Frontend internship task &mdash; a website build with HTML.</p>
-                <a href="https://github.com/kinzadev-26/developershub-website" target="_blank">View on GitHub</a>
-            </article>
-            <article>
-                <h3>kiz.dev Portfolio</h3>
-                <p>Personal developer portfolio project build with JavaScript.</p>
-                <a href="https://github.com/kinzadev-26/kiz.dev-portfolio" target="_blank">View on GitHub</a>
-            </article>
-            <article>
-                <h3>MERN Dashboard</h3>
-                <p>A dashboard application built using the MERN stack.</p>
-                <a href="https://github.com/kinzadev-26/mern-Dashboard" target="_blank">View on GitHub</a>
-            </article>
-            <article>
-                <h3>User Management API</h3>
-                <p>A backend API for managing users, built with TypeScript.</p>
-                <a href="https://github.com/kinzadev-26/user-management-api" target="_blank">View on GitHub</a>
-            </article>
+            <div class="project-list">
+                <article>
+                    <h3>DevelopersHub Website</h3>
+                    <p>Frontend internship task &mdash; a website built with HTML.</p>
+                    <a href="https://github.com/kinzadev-26/developershub-website" target="_blank">View on GitHub</a>
+                </article>
+                <article>
+                    <h3>Kiz.dev Portfolio</h3>
+                    <p>Personal developer portfolio project built with JavaScript.</p>
+                    <a href="https://github.com/kinzadev-26/kiz.dev-portfolio" target="_blank">View on GitHub</a>
+                </article>
+                <article>
+                    <h3>MERN Dashboard</h3>
+                    <p>A dashboard application built using the MERN stack.</p>
+                    <a href="https://github.com/kinzadev-26/mern-Dashboard" target="_blank">View on GitHub</a>
+                </article>
+                <article>
+                    <h3>User Management API</h3>
+                    <p>A backend API for managing users, built with TypeScript.</p>
+                    <a href="https://github.com/kinzadev-26/user-management-api" target="_blank">View on GitHub</a>
+                </article>
+            </div>
         </section>
-        <section id="contact">
-            <img src="images/contact.jpeg" alt="Contact icon">
+
+        <section id="contact" class="card card-wide">
+        
             <h2>Contact</h2>
-            <p>Let's connect and built something amazing.</p>
-            <p>
-                Gujranwala, Pakistan &bull; 03256125262 &bull;
+            <p>Let's connect and build something amazing.</p>
+            <p class="contact-details">
+                Gujranwala, Pakistan &bull; 0325-6125262 &bull;
                 <a href="mailto:kinzaimtiaz313@gmail.com">kinzaimtiaz313@gmail.com</a>
             </p>
-            <form action="#" method="post">
+            <form action="#" method="post" class="contact-form">
                 <p>
-                    <label for="name">Name</label><br>
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
                 </p>
                 <p>
-                    <label for="email">Email</label><br>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
                 </p>
                 <p>
-                    <label for="message">Message</label><br>
-                    <textarea name="message" id="message" rows="5" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
                 </p>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn btn-solid">Send Message</button>
             </form>
         </section>
+
+        </div>
+
     </main>
 
-    <footer>
-        <p>
-            &copy; 2026 Kinza Imtiaz. all rights are reserved.
-        </p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Kinza Imtiaz. All rights reserved.</p>
     </footer>
-</body>
 
+</body>
 </html>
