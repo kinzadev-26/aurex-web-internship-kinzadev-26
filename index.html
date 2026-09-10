@@ -4,187 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinza Imtiaz | Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <header class="site-header">
-        <p class="logo"><strong>KI</strong> Kinza Imtiaz</p>
+        <a class="logo" href="index.html"><strong>KI</strong> Kinza Imtiaz</a>
         <nav class="primary-nav" aria-label="Primary navigation">
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <nav class="social-nav" aria-label="Social links">
-            <ul class="social-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="https://github.com/kinzadev-26" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/kinza-imtiaz-454656370" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/kiziii26?stkn=bTFlc2tzeHBrbzJy" target="_blank">Instagram</a></li>
-                <li><a href="mailto:kinzaimtiaz313@gmail.com">Email</a></li>
-            </ul>
-        </nav>
+        <a href="contact.html" class="btn btn-solid btn-nav-cta">Let's Connect</a>
     </header>
+
+    <nav class="social-nav" aria-label="Social links">
+        <ul class="social-links">
+            <li><a href="index.html" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="https://github.com/kinzadev-26" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/kinza-imtiaz-454656370" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:kinzaimtiaz313@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+    </nav>
 
     <main>
 
         <section id="home" class="hero" aria-label="Introduction">
+            <img class="hero-banner" src="images/hero-image.jpeg" alt="Illustration of Kinza Imtiaz at her desk with a laptop">
             <div class="hero-text">
                 <p class="hero-greeting">Hello, I'm</p>
                 <h1>Kinza Imtiaz</h1>
-                <p class="hero-tagline">IT Student &bull; Web Developer &bull; Always Learning, Always Shipping</p>
-                <p class="hero-summary">Turning what I learn into real projects &mdash; currently exploring system design and backend scaling.</p>
+                <p class="hero-tagline">Developer &bull; Creator &bull; Problem Solver</p>
+                <p>Turning what I learn into real projects &mdash; currently exploring system design and backend scaling.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-solid">View My Work</a>
+                    <a href="projects.html" class="btn btn-solid">View My Work</a>
                     <a href="Kinza_Imtiaz.pdf" download class="btn btn-outline">Download CV</a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <img src="images/hero-image.jpeg" alt="Hero image">
+
+            <div class="wrap cards-grid">
+
+                <article class="card-teaser card-about">
+                    <span class="card-icon-wrap"><i class="fa-solid fa-user"></i></span>
+                    <div class="card-body">
+                        <h2>About Me</h2>
+                        <p>A Little About Me</p>
+                    </div>
+                    <a class="card-arrow" href="about.html" aria-label="View full About Me page"><i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="card-teaser card-skills">
+                    <span class="card-icon-wrap"><i class="fa-solid fa-code"></i></span>
+                    <div class="card-body">
+                        <h2>Skills</h2>
+                        <p>Tech & Tools</p>
+                    </div>
+                    <a class="card-arrow" href="skills.html" aria-label="View full Skills page"><i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="card-teaser card-education">
+                    <span class="card-icon-wrap"><i class="fa-solid fa-graduation-cap"></i></span>
+                    <div class="card-body">
+                        <h2>Education</h2>
+                        <p>Academic Journey</p>
+                    </div>
+                    <a class="card-arrow" href="education.html" aria-label="View full Education page"><i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="card-teaser card-experience">
+                    <span class="card-icon-wrap"><i class="fa-solid fa-briefcase"></i></span>
+                    <div class="card-body">
+                        <h2>Experience</h2>
+                        <p>Internships & Work</p>
+                    </div>
+                    <a class="card-arrow" href="experience.html" aria-label="View full Experience page"><i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="card-teaser card-projects">
+                    <span class="card-icon-wrap"><i class="fa-solid fa-lightbulb"></i></span>
+                    <div class="card-body">
+                        <h2>Projects</h2>
+                        <p>Latest Work</p>
+                    </div>
+                    <a class="card-arrow" href="projects.html" aria-label="View full Projects page"><i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <article class="card-teaser card-contact">
+                    <span class="card-icon-wrap"><i class="fa-solid fa-paper-plane"></i></span>
+                    <div class="card-body">
+                        <h2>Contact</h2>
+                        <p>Let's collaborate!</p>
+                    </div>
+                    <a class="card-arrow" href="contact.html" aria-label="View full Contact page"><i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
             </div>
         </section>
-
-        <div class="cards-grid">
-
-        <section id="about" class="card">
-            
-            <h2>About Me</h2>
-            <p>Enthusiastic and detail-oriented Information Technology undergraduate with a strong interest in software engineering and web development. Passionate about learning modern technologies and applying technical skills to build efficient, user-focused applications while growing as a developer.</p>
-        </section>
-
-        <section id="skills" class="card">
-            
-            <h2>Skills</h2>
-            <p>Technologies and tools I work with.</p>
-            <ul>
-                <li>HTML5 &amp; CSS3</li>
-                <li>JavaScript &amp; TypeScript</li>
-                <li>React &amp; Next.js</li>
-                <li>Node.js, Express &amp; Nest.js</li>
-                <li>MongoDB, MySQL, PostgreSQL &amp; SQL</li>
-                <li>Tailwind CSS &amp; Bootstrap</li>
-                <li>Responsive Web Design</li>
-                <li>Git &amp; GitHub</li>
-            </ul>
-        </section>
-
-        <section id="education" class="card">
-            
-            <h2>Education</h2>
-            <table>
-                <caption>Academic Background</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Degree</th>
-                        <th scope="col">Institution</th>
-                        <th scope="col">Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Bachelor of Science in Information Technology</td>
-                        <td>Government Islamia Post Graduate College, Gujranwala</td>
-                        <td>2023&ndash;2027 (CGPA: 3.43)</td>
-                    </tr>
-                    <tr>
-                        <td>Intermediate</td>
-                        <td>Kips College, Gujranwala</td>
-                        <td>2021&ndash;2023</td>
-                    </tr>
-                    <tr>
-                        <td>Matriculation</td>
-                        <td>Millat Ideal Higher Secondary School and College, Gujranwala</td>
-                        <td>2018&ndash;2020</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="experience" class="card card-wide">
-        
-            <h2>Experience</h2>
-            <article>
-                <h3>Full-Stack Engineering Intern &mdash; AUREX (Current)</h3>
-                <p>Currently building frontend foundations: Git/GitHub workflows, HTML5 structure, and semantic, accessible markup.</p>
-            </article>
-            <article>
-                <h3>Frontend Developer Intern &mdash; DevelopersHub Corporation (Remote, 2 months)</h3>
-                <ul>
-                    <li>Developed responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.</li>
-                    <li>Collaborated with team members to implement UI designs and improve user experience.</li>
-                    <li>Participated in code reviews and gained experience working in a remote development environment.</li>
-                </ul>
-            </article>
-            <article>
-                <h3>MERN Stack Intern &mdash; DawoodTech (Remote, 2 months)</h3>
-                <ul>
-                    <li>Assisted in developing full-stack web applications using the MERN stack.</li>
-                    <li>Worked with React.js, Node.js, Nest.js, Express.js, and MongoDB to build and maintain application features.</li>
-                    <li>Collaborated with mentors on project development, debugging, and testing.</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="projects" class="card card-wide">
-        
-            <h2>Projects</h2>
-            <p>Explore my latest work and case studies.</p>
-            <div class="project-list">
-                <article>
-                    <h3>DevelopersHub Website</h3>
-                    <p>Frontend internship task &mdash; a website built with HTML.</p>
-                    <a href="https://github.com/kinzadev-26/developershub-website" target="_blank">View on GitHub</a>
-                </article>
-                <article>
-                    <h3>Kiz.dev Portfolio</h3>
-                    <p>Personal developer portfolio project built with JavaScript.</p>
-                    <a href="https://github.com/kinzadev-26/kiz.dev-portfolio" target="_blank">View on GitHub</a>
-                </article>
-                <article>
-                    <h3>MERN Dashboard</h3>
-                    <p>A dashboard application built using the MERN stack.</p>
-                    <a href="https://github.com/kinzadev-26/mern-Dashboard" target="_blank">View on GitHub</a>
-                </article>
-                <article>
-                    <h3>User Management API</h3>
-                    <p>A backend API for managing users, built with TypeScript.</p>
-                    <a href="https://github.com/kinzadev-26/user-management-api" target="_blank">View on GitHub</a>
-                </article>
-            </div>
-        </section>
-
-        <section id="contact" class="card card-wide">
-        
-            <h2>Contact</h2>
-            <p>Let's connect and build something amazing.</p>
-            <p class="contact-details">
-                Gujranwala, Pakistan &bull; 0325-6125262 &bull;
-                <a href="mailto:kinzaimtiaz313@gmail.com">kinzaimtiaz313@gmail.com</a>
-            </p>
-            <form action="#" method="post" class="contact-form">
-                <p>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </p>
-                <p>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
-                <p>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </p>
-                <button type="submit" class="btn btn-solid">Send Message</button>
-            </form>
-        </section>
-
-        </div>
 
     </main>
 
